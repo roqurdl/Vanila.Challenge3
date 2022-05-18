@@ -4,9 +4,8 @@ const CAL_DAY = 1000 * 60 * 60 * 24;
 const CAL_HOUR = 1000 * 60 * 60;
 const CAL_MIN = 1000 * 60;
 
-const currentYear = new Date().getFullYear();
-
 function paintDDay() {
+  const currentYear = new Date().getFullYear();
   const dDay = new Date(`December 25, ${currentYear}`);
   const today = new Date();
   const gap = dDay.getTime() - today.getTime();
